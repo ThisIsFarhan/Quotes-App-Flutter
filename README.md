@@ -1,16 +1,67 @@
-# qoutesapp
+# Quotes App 📜✨
 
-A new Flutter project.
+A beautiful Flutter application that fetches inspirational quotes from an API and displays them in an elegant user interface. The app incorporates smooth navigation, attractive design, and modern Flutter practices.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features 🚀
 
-A few resources to get you started if this is your first Flutter project:
+- **Splash Screen**: 
+  - An elegant gradient background with a built-in quote icon and a loading indicator while fetching data from the API.
+  
+- **Main Screen**:
+  - Displays a list of quotes in a scrollable, card-based layout.
+  - Tapping on a quote navigates to a detailed view.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Quote Screen**:
+  - Shows the full quote with its author in a visually appealing format.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **API Integration**:
+  - Fetches quotes dynamically from the [ZenQuotes API](https://zenquotes.io/api).
+
+---
+
+## Tech Stack 💻
+
+### **Frontend**
+- **[Flutter](https://flutter.dev/)**: 
+  - Framework for building the cross-platform application.
+  - Widgets used: `MaterialApp`, `Scaffold`, `ListView.builder`, `GestureDetector`, `Card`, and more.
+
+- **Built-in Flutter Icons**: 
+  - Used `Icons.format_quote` for a professional look.
+
+### **Backend (API)**:
+- **[ZenQuotes API](https://zenquotes.io/api)**:
+  - RESTful API providing inspirational quotes.
+
+### **State Management**:
+- **Stateless and Stateful Widgets**:
+  - Used to handle navigation, UI updates, and API integration efficiently.
+
+### **Networking**:
+- **[HTTP Package](https://pub.dev/packages/http)**:
+  - Used to fetch data from the API asynchronously.
+
+### **UI/UX Design**:
+- **Gradient Backgrounds**:
+  - Smooth transitions between colors using `LinearGradient`.
+- **Theming**:
+  - Custom color schemes for AppBar, splash screen, and main app.
+- **Cards**:
+  - Material design cards to display quotes neatly.
+
+---
+
+## Folder Structure 🗂️
+
+```plaintext
+.
+├── lib/
+│   ├── main.dart           # Entry point of the app
+│   ├── splash_screen.dart  # Splash screen with loading
+│   ├── main_screen.dart    # Main screen showing quotes list
+│   ├── qoute_screen.dart   # Quote detail screen
+├── pubspec.yaml            # Project dependencies
+├── images/                 # App icons and assets
+└── README.md               # This README file
